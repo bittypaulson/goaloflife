@@ -1,0 +1,17 @@
+<nav>
+    <button type="button" class="btn btn-primary" (click)="play()" [disabled]="playing">
+      Play
+    </button>
+    <button type="button" class="btn btn-primary" (click)="reset()">
+      Reset
+    </button>
+    <button type="button" class="btn btn-primary" (click)="stop()">
+      Stop
+    </button>
+</nav>
+<main>
+    <div *ngFor="let firstRow of gridCellsArray; let i = index">
+        <div class="square" [ngClass]="{populated: columnCell.populated}" *ngFor="let columnCell of firstRow; let j = index" (click)="changePopulateState(columnCell)">
+        </div>
+    </div>
+</main>
