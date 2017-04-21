@@ -7,6 +7,7 @@ Note that this project requires node >=v6.5.0 and npm >=3.10.3 in order to be ab
 ## Installation
 ```
 git clone https://github.com/dmusev/goaloflife.git
+
 cd goaloflife
 
 npm install
