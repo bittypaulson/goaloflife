@@ -17,3 +17,5 @@ npm install
 
 npm start
 ```
+
+app available at localhost:3000
